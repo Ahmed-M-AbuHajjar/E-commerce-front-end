@@ -12,7 +12,7 @@ export const UpdateCar = () => {
     const location = useLocation();
     const idReturned = location.pathname.slice(11);
     
-    const API_URL = `http://localhost:3000/api/v1/car/update/${idReturned}`;
+    const API_URL = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/car/update/${idReturned}`;
 
   const [errorMessage, setErrorMessage] = useState(null);
   
