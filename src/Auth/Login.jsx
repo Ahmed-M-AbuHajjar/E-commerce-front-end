@@ -6,7 +6,7 @@ import { NavLink,useNavigate } from "react-router-dom";
 import { Header } from "../Header/Header";
 import { Footer } from '../Footer/Footer';
 
-const API_URL = 'https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/auth/signin';
+const API_URL = 'https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/auth/signin';
 
 
 const email_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -89,7 +89,7 @@ export const Login = () => {
             } else if (err.response?.status === 404) {
                 setErrMsg('No user Found with this email');
             } else {
-                setErrMsg('Registration Failed')
+                setErrMsg('login Failed')
             }
             errRef.current.focus();
         }

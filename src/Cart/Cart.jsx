@@ -16,7 +16,7 @@ export const Cart = () => {
    
 
 
-    let AddToCart_API = `https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/cart`;
+    let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/cart`;
     
     useEffect(()=> {
         let userDetails = JSON.parse(localStorage.getItem('user'));
@@ -24,7 +24,7 @@ export const Cart = () => {
             navigate('/login');
         } else {
             let userID = userDetails.foundedUser._id;
-            let getCart_API = `https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/cart/${userID}`;
+            let getCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/cart/${userID}`;
 
             axios.get(getCart_API)
             .then(response => {
