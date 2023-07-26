@@ -10,8 +10,8 @@ export const  CarDetail = () => {
     const location = useLocation();
   const idReturned = location.pathname.slice(6);
   
-let API_URL = `http://localhost:3000/api/v1/car/${idReturned}`
-let delete_API = `http://localhost:3000/api/v1/car/delete/${idReturned}`
+let API_URL = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/car/${idReturned}`
+let delete_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/car/delete/${idReturned}`
 
 
 let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/cart`
