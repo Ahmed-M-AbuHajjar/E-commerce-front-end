@@ -4,7 +4,7 @@ import { Header } from "../Header/Header";
 import { Footer } from '../Footer/Footer';
 import { NavLink } from "react-router-dom";
 
-const API_URL = 'http://localhost:3000/api/v1/car/';
+const API_URL = 'https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/api/v1/car/';
 
 
 
