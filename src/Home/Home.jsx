@@ -41,7 +41,7 @@ export const  Home = () => {
 					</section>
 
 					<div id="main">
-							<h3 className="text-center m-0">Top Trending</h3>
+
 							<section className="tiles">
 							{data.allCars ? ( 
 								data.allCars.map(item => (
