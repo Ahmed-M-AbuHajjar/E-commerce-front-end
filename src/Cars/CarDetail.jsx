@@ -14,7 +14,7 @@ let API_URL = `http://localhost:3000/api/v1/car/${idReturned}`
 let delete_API = `http://localhost:3000/api/v1/car/delete/${idReturned}`
 
 
-let AddToCart_API = `http://localhost:3000/api/v1/cart`
+let AddToCart_API = `https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/cart`
 
     const [data, setData] = useState([]);
 	useEffect(() => {

@@ -5,7 +5,7 @@ import { Header } from '../Header/Header';
 import axios from "axios";
 
 export const Order = () => {
-    let API_URL = `http://localhost:3000/api/v1/order`;
+    let API_URL = `https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/order`;
  
 
     const [data, setData] = useState([]);
@@ -32,7 +32,7 @@ export const Order = () => {
     
     let orderId= event.target.id;
     console.log(orderId);
-    axios.delete(`http://localhost:3000/api/v1/order/${orderId}`)
+    axios.delete(`https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/order/${orderId}`)
     .then(response => {
       console.log(response.data);
     })

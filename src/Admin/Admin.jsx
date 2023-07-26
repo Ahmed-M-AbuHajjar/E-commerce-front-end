@@ -3,7 +3,7 @@ import {  useNavigate  } from 'react-router-dom';
 import { Header } from "../Header/Header";
 import { Footer } from '../Footer/Footer';
 
-const API_URL = 'http://localhost:3000/api/v1/car/add';
+const API_URL = 'https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/car/add';
 
 
 

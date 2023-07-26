@@ -8,7 +8,7 @@ import {  useNavigate  } from 'react-router-dom';
 
 const stripePromise = loadStripe('pk_test_51N89eaK6yKFqarblNot7BTqorvjM1jCjiIuQsZy0kDmKqPJVpPXSyEjhqtE3P0bQcuXvMdA4RHhrNapOXPHVA3Bf00kNhWsmrO');
 
-let API_URL = 'http://localhost:3000/api/v1/order'
+let API_URL = 'https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/order'
 
 
 const PaymentForm = () => {

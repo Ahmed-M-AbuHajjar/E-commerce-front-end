@@ -6,7 +6,7 @@ import { NavLink,useNavigate } from "react-router-dom";
 import { Header } from "../Header/Header";
 import { Footer } from '../Footer/Footer';
 
-const API_URL = 'http://localhost:3000/api/v1/auth/signin';
+const API_URL = 'https://ahmed-m-abuhajjar.github.io/E-commerce-front-end/api/v1/auth/signin';
 
 
 const email_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
