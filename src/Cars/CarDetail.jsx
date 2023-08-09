@@ -76,7 +76,8 @@ let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/
           
          
         }
-   
+        localStorage.setItem('cart',JSON.stringify(cartData))
+
         fetch(AddToCart_API, {
           method:'POST',
          body:JSON.stringify(cartData),
@@ -86,9 +87,11 @@ let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/
           
         })
         .then(response => response.json())
-        .then(data => {console.log(data)})
+        .then(data => {
+          console.log(data);
+          navigate('/cart');
+        })
         .catch(error => {console.log(error)})
-        localStorage.setItem('cart',JSON.stringify(cartData))
 
       }}
  
