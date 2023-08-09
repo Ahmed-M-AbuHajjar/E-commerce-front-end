@@ -47,6 +47,7 @@ let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/
             ], 
           }
           if(localStorage.getItem('cart') == null){
+            localStorage.setItem('cart',JSON.stringify(cartData))
           fetch(AddToCart_API, {
             method:'POST',
            body:JSON.stringify(cartData),
@@ -56,9 +57,11 @@ let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/
             
           })
           .then(response => response.json())
-          .then(data => {console.log(data)})
+          .then(data => {
+            console.log(data);
+            navigate('/cart');
+          })
           .catch(error => {console.log(error)})
-        localStorage.setItem('cart',JSON.stringify(cartData))
       } else if(userID == JSON.parse(localStorage.getItem('cart')).createdBy){
         let foundedCart = JSON.parse(localStorage.getItem('cart'))
         console.log(foundedCart);
@@ -88,8 +91,7 @@ let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/
         localStorage.setItem('cart',JSON.stringify(cartData))
 
       }}
-    navigate('/cart')
-    window.location.reload()
+ 
 
     }
   function deleteBTN(){
@@ -97,6 +99,7 @@ let AddToCart_API = `https://e-commerce-back-end-ahmed-m-abuhajjar.onrender.com/
   .then(response => {
     console.log(response.data);
   })
+  .then(localStorage.removeItem('cart'))
   .catch(error => {
     console.error(error);
   });
